@@ -1,0 +1,1201 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="nwkzbrJsej1kwIK45ZcJPhrfi7kpqZ-fgdMCs97mZow" />
+    <title>Burç Uyumu Testi 2025 - Aşk Uyumunuzu Öğrenin</title>
+ 
+    <meta name="description" content="Ücretsiz burç uyumu hesaplama testi. Hangi burçlarla uyumlusunuz? Anında sonuç alın.">
+    <meta name="keywords" content="burç uyumu, astroloji, zodyak, aşk uyumu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Burç Uyumu Testi">
+    <meta property="og:description" content="Hangi burçlarla uyumlusun? Hemen test et!">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            <h1>Burç Uyumu Testi</h1>
+            <h2>Aşk Uyumunuzu Keşfedin</h2>
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            padding: 15px 25px;
+            border-radius: 15px;
+            color: #ffffff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(238, 90, 82, 0.3);
+        }
+
+        .tab-button:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #feca57;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #f1f2f6;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 1rem;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group select option {
+            background: #1a1a2e;
+            color: #ffffff;
+        }
+
+        .date-inputs {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+        }
+
+        .couple-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .person-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .person-card h3 {
+            color: #feca57;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(238, 90, 82, 0.3);
+            margin: 10px 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(238, 90, 82, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #5f27cd, #341f97);
+            box-shadow: 0 10px 20px rgba(95, 39, 205, 0.3);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 15px 30px rgba(95, 39, 205, 0.4);
+        }
+
+        .btn-clear {
+            background: linear-gradient(45deg, #54a0ff, #2e86de);
+            box-shadow: 0 10px 20px rgba(84, 160, 255, 0.3);
+        }
+
+        .btn-clear:hover {
+            box-shadow: 0 15px 30px rgba(84, 160, 255, 0.4);
+        }
+
+        .btn-love {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            box-shadow: 0 10px 20px rgba(255, 107, 157, 0.3);
+        }
+
+        .btn-love:hover {
+            box-shadow: 0 15px 30px rgba(255, 107, 157, 0.4);
+        }
+
+        .result-card {
+            grid-column: 1 / -1;
+            min-height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        .zodiac-emoji {
+            font-size: 4rem;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0.3;
+        }
+
+        .compatibility-score {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px 0;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .score-excellent { background: linear-gradient(45deg, #2ed573, #7bed9f); }
+        .score-good { background: linear-gradient(45deg, #feca57, #ff9ff3); }
+        .score-average { background: linear-gradient(45deg, #54a0ff, #2e86de); }
+        .score-poor { background: linear-gradient(45deg, #ff6348, #ff4757); }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #feca57;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .quote-animation {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .horoscope-result {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .love-animation {
+            animation: heartBeat 0.8s ease-out;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .error-message {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message {
+            background: linear-gradient(45deg, #2ed573, #7bed9f);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .quote-tab {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .quote-display {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 600px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .couple-inputs {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .date-inputs {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>🌟 Burç ve Aşk Uyumluluğu</h1>
+            <p>Modern astroloji uygulaması - Burcunuzu keşfedin, aşk uyumluluğunuzu öğrenin!</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('horoscope')">🔮 Burç Analizi</button>
+            <button class="tab-button" onclick="showTab('compatibility')">💕 Aşk Uyumluluğu</button>
+            <button class="tab-button" onclick="showTab('quote')">📜 Günün Sözü</button>
+        </div>
+
+        <!-- Burç Analizi Tab -->
+        <div id="horoscope" class="tab-content active">
+            <div class="main-content">
+                <div class="card">
+                    <h2>📋 Kişisel Bilgiler</h2>
+                    
+                    <div class="error-message" id="errorMessage1"></div>
+                    <div class="success-message" id="successMessage1"></div>
+
+                    <div class="form-group">
+                        <label for="name">👤 Adınız:</label>
+                        <input type="text" id="name" placeholder="Adınızı girin...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>📅 Doğum Tarihi:</label>
+                        <div class="date-inputs">
+                            <select id="day">
+                                <option value="">Gün</option>
+                            </select>
+                            <select id="month">
+                                <option value="">Ay Seçin</option>
+                                <option value="1">Ocak</option>
+                                <option value="2">Şubat</option>
+                                <option value="3">Mart</option>
+                                <option value="4">Nisan</option>
+                                <option value="5">Mayıs</option>
+                                <option value="6">Haziran</option>
+                                <option value="7">Temmuz</option>
+                                <option value="8">Ağustos</option>
+                                <option value="9">Eylül</option>
+                                <option value="10">Ekim</option>
+                                <option value="11">Kasım</option>
+                                <option value="12">Aralık</option>
+                            </select>
+                            <input type="number" id="year" placeholder="Yıl" min="1900" max="2024">
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="btn" onclick="calculateHoroscope()">
+                            🔮 Burcunu Öğren
+                        </button>
+                        <button class="btn btn-clear" onclick="clearHoroscope()">
+                            🧹 Temizle
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>✨ Burç Analizi</h2>
+                    <div class="loading" id="loading1">
+                        <div class="spinner"></div>
+                        <p>Analiz ediliyor...</p>
+                    </div>
+                    <div id="results1">
+                        <div class="result-content">
+🌟 Burç Analizi 🌟
+
+Kişisel bilgilerinizi girin ve detaylı burç analizinizi alın!
+
+• Burç özelliklerinizi öğrenin
+• Kişilik analizinizi görün  
+• Şanslı renk ve gezegen bilgisi
+• En uyumlu burçları keşfedin
+
+Başlamak için bilgilerinizi doldurun! ✨
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aşk Uyumluluğu Tab -->
+        <div id="compatibility" class="tab-content">
+            <div class="main-content">
+                <div class="card">
+                    <h2>💕 Çift Bilgileri</h2>
+                    
+                    <div class="error-message" id="errorMessage2"></div>
+                    <div class="success-message" id="successMessage2"></div>
+
+                    <div class="couple-inputs">
+                        <div class="person-card">
+                            <h3>💖 1. Kişi</h3>
+                            <div class="form-group">
+                                <label>👤 Adı:</label>
+                                <input type="text" id="person1Name" placeholder="1. kişinin adı...">
+                            </div>
+                            <div class="form-group">
+                                <label>🔮 Burcu:</label>
+                                <select id="person1Sign">
+                                    <option value="">Burç Seçin</option>
+                                    <option value="Koç">♈ Koç</option>
+                                    <option value="Boğa">♉ Boğa</option>
+                                    <option value="İkizler">♊ İkizler</option>
+                                    <option value="Yengeç">♋ Yengeç</option>
+                                    <option value="Aslan">♌ Aslan</option>
+                                    <option value="Başak">♍ Başak</option>
+                                    <option value="Terazi">♎ Terazi</option>
+                                    <option value="Akrep">♏ Akrep</option>
+                                    <option value="Yay">♐ Yay</option>
+                                    <option value="Oğlak">♑ Oğlak</option>
+                                    <option value="Kova">♒ Kova</option>
+                                    <option value="Balık">♓ Balık</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="person-card">
+                            <h3>💕 2. Kişi</h3>
+                            <div class="form-group">
+                                <label>👤 Adı:</label>
+                                <input type="text" id="person2Name" placeholder="2. kişinin adı...">
+                            </div>
+                            <div class="form-group">
+                                <label>🔮 Burcu:</label>
+                                <select id="person2Sign">
+                                    <option value="">Burç Seçin</option>
+                                    <option value="Koç">♈ Koç</option>
+                                    <option value="Boğa">♉ Boğa</option>
+                                    <option value="İkizler">♊ İkizler</option>
+                                    <option value="Yengeç">♋ Yengeç</option>
+                                    <option value="Aslan">♌ Aslan</option>
+                                    <option value="Başak">♍ Başak</option>
+                                    <option value="Terazi">♎ Terazi</option>
+                                    <option value="Akrep">♏ Akrep</option>
+                                    <option value="Yay">♐ Yay</option>
+                                    <option value="Oğlak">♑ Oğlak</option>
+                                    <option value="Kova">♒ Kova</option>
+                                    <option value="Balık">♓ Balık</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="btn btn-love" onclick="calculateCompatibility()">
+                            💕 Aşk Uyumluluğunu Hesapla
+                        </button>
+                        <button class="btn btn-clear" onclick="clearCompatibility()">
+                            🧹 Temizle
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>💖 Uyumluluk Analizi</h2>
+                    <div class="loading" id="loading2">
+                        <div class="spinner"></div>
+                        <p>Uyumluluk hesaplanıyor...</p>
+                    </div>
+                    <div id="results2">
+                        <div class="result-content">
+💕 AŞK UYUMLULUĞU ANALİZİ 💕
+
+İki kişinin burç uyumluluğunu öğrenin!
+
+• Her iki kişinin adını girin
+• Burçlarını seçin  
+• Uyumluluk skorunu görün
+• Detaylı analiz alın
+
+Aşkın yıldızlardaki karşılığını keşfedin! ✨
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Günün Sözü Tab -->
+        <div id="quote" class="tab-content">
+            <div class="quote-tab">
+                <h2 style="color: #feca57; font-size: 2.5rem; margin-bottom: 30px;">📜 Günün Sözü 📜</h2>
+                
+                <button class="btn btn-secondary" onclick="showDailyQuote()">
+                    ✨ Yeni Söz Al
+                </button>
+
+                <div class="quote-display" id="quoteDisplay">
+                    <div class="result-content" style="text-align: center; font-size: 1.3rem;">
+📜 İLHAM VERICI SÖZLER 📜
+
+Günün sözüyle ilham alın!
+
+• Motivasyon arttırıcı sözler
+• Hayat öğütleri  
+• Felsefi yaklaşımlar
+
+Her gün yeni bir perspektif kazanın! ✨
+
+Yukarıdaki butona tıklayarak
+günün sözünü alabilirsiniz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Burç verileri
+        const zodiacData = {
+            "Oğlak": {
+                dates: [[12, 22, 31], [1, 1, 19]],
+                element: "Toprak", 
+                planet: "Satürn", 
+                color: "Kahverengi", 
+                emoji: "♑",
+                description: "Kararlı ve çalışkan bir kişiliğiniz var. Hedeflerinize ulaşmada çok başarılısınız."
+            },
+            "Kova": {
+                dates: [[1, 20, 31], [2, 1, 18]],
+                element: "Hava", 
+                planet: "Uranüs", 
+                color: "Mavi", 
+                emoji: "♒",
+                description: "Yaratıcı ve özgün düşüncelerinizle dikkat çekiyorsunuz. İnsanlara yardım etmeyi seviyorsunuz."
+            },
+            "Balık": {
+                dates: [[2, 19, 29], [3, 1, 20]],
+                element: "Su", 
+                planet: "Neptün", 
+                color: "Deniz Mavisi", 
+                emoji: "♓",
+                description: "Empati gücünüz çok yüksek. Sanatsal yetenekleriniz gelişmiş olabilir."
+            },
+            "Koç": {
+                dates: [[3, 21, 31], [4, 1, 19]],
+                element: "Ateş", 
+                planet: "Mars", 
+                color: "Kırmızı", 
+                emoji: "♈",
+                description: "Liderlik özellikleriniz güçlü. Girişimci ruhunuzla yeni projelere atılmayı seviyorsunuz."
+            },
+            "Boğa": {
+                dates: [[4, 20, 30], [5, 1, 20]],
+                element: "Toprak", 
+                planet: "Venüs", 
+                color: "Yeşil", 
+                emoji: "♉",
+                description: "Sabırlı ve kararlısınız. Güzelliği ve konforu seven bir yapınız var."
+            },
+            "İkizler": {
+                dates: [[5, 21, 31], [6, 1, 20]],
+                element: "Hava", 
+                planet: "Merkür", 
+                color: "Sarı", 
+                emoji: "♊",
+                description: "İletişim yeteneğiniz güçlü. Merak duygunuz sizi sürekli öğrenmeye yönlendiriyor."
+            },
+            "Yengeç": {
+                dates: [[6, 21, 30], [7, 1, 22]],
+                element: "Su", 
+                planet: "Ay", 
+                color: "Gümüş", 
+                emoji: "♋",
+                description: "Koruyucu ve şefkatli bir kişiliğiniz var. Aile bağlarınız çok güçlü."
+            },
+            "Aslan": {
+                dates: [[7, 23, 31], [8, 1, 22]],
+                element: "Ateş", 
+                planet: "Güneş", 
+                color: "Altın", 
+                emoji: "♌",
+                description: "Doğal lidersiniz ve dikkat çekmeyi seviyorsunuz. Yaratıcılığınız yüksek."
+            },
+            "Başak": {
+                dates: [[8, 23, 31], [9, 1, 22]],
+                element: "Toprak", 
+                planet: "Merkür", 
+                color: "Lacivert", 
+                emoji: "♍",
+                description: "Detaycı ve mükemmeliyetçi bir yapınız var. Düzen ve organizasyonu seviyorsunuz."
+            },
+            "Terazi": {
+                dates: [[9, 23, 30], [10, 1, 22]],
+                element: "Hava", 
+                planet: "Venüs", 
+                color: "Pembe", 
+                emoji: "♎",
+                description: "Adalet duygunuz güçlü. Harmoni ve denge arayışındasınız."
+            },
+            "Akrep": {
+                dates: [[10, 23, 31], [11, 1, 21]],
+                element: "Su", 
+                planet: "Plüton", 
+                color: "Bordo", 
+                emoji: "♏",
+                description: "Güçlü sezgileriniz var. Derinlemesine düşünmeyi ve araştırmayı seviyorsunuz."
+            },
+            "Yay": {
+                dates: [[11, 22, 30], [12, 1, 21]],
+                element: "Ateş", 
+                planet: "Jüpiter", 
+                color: "Mor", 
+                emoji: "♐",
+                description: "Özgürlük sever ve maceracı bir ruhunuz var. Felsefe ve öğrenme konularına ilginiz yüksek."
+            }
+        };
+
+        // Uyumluluk matrisi
+        const compatibilityMatrix = {
+            "Koç": {"Aslan": 95, "Yay": 90, "İkizler": 85, "Kova": 80, "Terazi": 75, "Oğlak": 60, "Yengeç": 55, "Başak": 50, "Boğa": 45, "Akrep": 40, "Balık": 35, "Koç": 70},
+            "Boğa": {"Başak": 95, "Oğlak": 90, "Yengeç": 85, "Balık": 80, "Akrep": 75, "Terazi": 60, "Aslan": 55, "Kova": 50, "İkizler": 45, "Yay": 40, "Koç": 35, "Boğa": 70},
+            "İkizler": {"Terazi": 95, "Kova": 90, "Aslan": 85, "Koç": 80, "Yay": 75, "Balık": 60, "Başak": 55, "Oğlak": 50, "Boğa": 45, "Yengeç": 40, "Akrep": 35, "İkizler": 70},
+            "Yengeç": {"Akrep": 95, "Balık": 90, "Boğa": 85, "Başak": 80, "Oğlak": 75, "Koç": 60, "Terazi": 55, "Kova": 50, "Yay": 45, "Aslan": 40, "İkizler": 35, "Yengeç": 70},
+            "Aslan": {"Yay": 95, "Koç": 90, "İkizler": 85, "Terazi": 80, "Kova": 75, "Başak": 60, "Akrep": 55, "Oğlak": 50, "Balık": 45, "Yengeç": 40, "Boğa": 35, "Aslan": 70},
+            "Başak": {"Oğlak": 95, "Boğa": 90, "Yengeç": 85, "Akrep": 80, "Balık": 75, "Aslan": 60, "Kova": 55, "Koç": 50, "Terazi": 45, "Yay": 40, "İkizler": 35, "Başak": 70},
+            "Terazi": {"Kova": 95, "İkizler": 90, "Aslan": 85, "Yay": 80, "Koç": 75, "Boğa": 60, "Akrep": 55, "Balık": 50, "Başak": 45, "Oğlak": 40, "Yengeç": 35, "Terazi": 70},
+            "Akrep": {"Balık": 95, "Yengeç": 90, "Başak": 85, "Oğlak": 80, "Boğa": 75, "Yay": 60, "Aslan": 55, "Kova": 50, "İkizler": 45, "Terazi": 40, "Koç": 35, "Akrep": 70},
+            "Yay": {"Koç": 95, "Aslan": 90, "Kova": 85, "Terazi": 80, "İkizler": 75, "Akrep": 60, "Balık": 55, "Boğa": 50, "Yengeç": 45, "Başak": 40, "Oğlak": 35, "Yay": 70},
+            "Oğlak": {"Boğa": 95, "Başak": 90, "Akrep": 85, "Balık": 80, "Yengeç": 75, "Terazi": 60, "İkizler": 55, "Yay": 50, "Aslan": 45, "Kova": 40, "Koç": 35, "Oğlak": 70},
+            "Kova": {"İkizler": 95, "Terazi": 90, "Yay": 85, "Koç": 80, "Aslan": 75, "Balık": 60, "Oğlak": 55, "Akrep": 50, "Yengeç": 45, "Başak": 40, "Boğa": 35, "Kova": 70},
+            "Balık": {"Yengeç": 95, "Akrep": 90, "Oğlak": 85, "Boğa": 80, "Başak": 75, "İkizler": 60, "Yay": 55, "Terazi": 50, "Aslan": 45, "Kova": 40, "Koç": 35, "Balık": 70}
+        };
+
+        const dailyQuotes = [
+            "Çalış, azmet, kazan!",
+            "Bekleme, durma boş, herkes gibi sen de koş!",
+            "İlim ilim bilmektir, ilim kendini bilmektir.",
+            "Hayatta en hakiki mürşit ilimdir.",
+            "Sabır, acı bir köktür ama meyvesi tatlıdır.",
+            "Bugün yapabileceğin işi yarına bırakma.",
+            "Her şeyin bir zamanı vardır, sabrın da meyvesi vardır.",
+            "Sustuğun hiçbir cümleden, konuştuğun kadar pişman olamazsın.",
+            "Gizlenmek zevklidir, bulunmamak felaket.",
+            "İnsanı en çok acıtan şey hayal kırıklıkları değil, yaşayamadığı mutluluklardır.",
+            "Bazıları birbirlerine aittir, hiç kavuşamasalar bile...",
+            "Zorluklarda sabır, bollukta şükür gerekir.",
+            "İnsan hayallerinin büyüklüğü kadar değerlidir.",
+            "Bilgi güçtür, ama bilgelik daha da güçlüdür.",
+            "Hayat kısa, ama güzel anılar onu uzatır.",
+            "Aşk her şeyi affeder, her şeyi mümkün kılar.",
+            "İki kalp bir olunca, yıldızlar bile dans eder."
+        ];
+
+        // Sayfa yüklendiğinde çalışacak fonksiyonlar
+        document.addEventListener('DOMContentLoaded', function() {
+            populateDays();
+            createParticles();
+        });
+
+        function populateDays() {
+            const daySelect = document.getElementById('day');
+            for (let i = 1; i <= 31; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                daySelect.appendChild(option);
+            }
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function showMessage(message, isError = false, tabNumber = 1) {
+            const errorDiv = document.getElementById(`errorMessage${tabNumber}`);
+            const successDiv = document.getElementById(`successMessage${tabNumber}`);
+            
+            if (isError) {
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+                successDiv.style.display = 'none';
+            } else {
+                successDiv.textContent = message;
+                successDiv.style.display = 'block';
+                errorDiv.style.display = 'none';
+            }
+            
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+                successDiv.style.display = 'none';
+            }, 4000);
+        }
+
+        function showLoading(show, tabNumber) {
+            const loading = document.getElementById(`loading${tabNumber}`);
+            const results = document.getElementById(`results${tabNumber}`);
+            
+            if (show) {
+                loading.classList.add('show');
+                results.style.display = 'none';
+            } else {
+                loading.classList.remove('show');
+                results.style.display = 'block';
+            }
+        }
+
+        function calculateZodiac(month, day) {
+            for (const [sign, data] of Object.entries(zodiacData)) {
+                for (const [startMonth, startDay, endDay] of data.dates) {
+                    if (month === startMonth && day >= startDay && day <= endDay) {
+                        return sign;
+                    }
+                }
+            }
+            return null;
+        }
+
+        function validateDate(month, day) {
+            const daysInMonth = {
+                1: 31, 2: 29, 3: 31, 4: 30, 5: 31, 6: 30,
+                7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31
+            };
+            
+            return month >= 1 && month <= 12 && day >= 1 && day <= daysInMonth[month];
+        }
+
+        function calculateHoroscope() {
+            const name = document.getElementById('name').value.trim();
+            const day = parseInt(document.getElementById('day').value);
+            const month = parseInt(document.getElementById('month').value);
+            const year = parseInt(document.getElementById('year').value);
+
+            // Validasyon
+            if (!name) {
+                showMessage('Lütfen adınızı girin!', true, 1);
+                return;
+            }
+
+            if (!day || !month || !year) {
+                showMessage('Lütfen tüm tarih bilgilerini girin!', true, 1);
+                return;
+            }
+
+            if (year < 1900 || year > new Date().getFullYear()) {
+                showMessage('Lütfen geçerli bir yıl girin!', true, 1);
+                return;
+            }
+
+            if (!validateDate(month, day)) {
+                showMessage('Geçersiz tarih!', true, 1);
+                return;
+            }
+
+            // Loading göster
+            showLoading(true, 1);
+
+            // Simulated delay for better UX
+            setTimeout(() => {
+                const zodiacSign = calculateZodiac(month, day);
+                
+                if (zodiacSign) {
+                    const age = new Date().getFullYear() - year;
+                    displayHoroscopeResult(name, zodiacSign, age);
+                    showMessage('Burç analizi tamamlandı!', false, 1);
+                } else {
+                    showMessage('Burç hesaplanamadı!', true, 1);
+                }
+                
+                showLoading(false, 1);
+            }, 1500);
+        }
+
+        function displayHoroscopeResult(name, sign, age) {
+            const data = zodiacData[sign];
+            const results = document.getElementById('results1');
+
+            // En uyumlu burçları hesapla
+            const compatibleSigns = Object.entries(compatibilityMatrix[sign])
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 3);
+
+            const result = `🌟 BURÇ ANALİZİ - ${name.toUpperCase()} 🌟
+${'='.repeat(50)}
+
+${data.emoji} BURCUNUZ: ${sign}
+🎂 YAŞINIZ: ${age}
+
+📊 BURÇ ÖZELLİKLERİ:
+🔥 Element: ${data.element}
+🪐 Gezegen: ${data.planet}
+🎨 Şanslı Renk: ${data.color}
+
+🔮 YORUM: ${data.description}
+
+💕 EN UYUMLU BURÇLAR:
+${compatibleSigns.map((item, index) => 
+    `${index + 1}. ${zodiacData[item[0]].emoji} ${item[0]} (%${item[1]})`
+).join('\n')}
+
+✨ Bu analiz genel astroloji bilgilerine dayanmaktadır.
+Kişisel gelişiminiz için bir rehber olarak kullanabilirsiniz!
+
+📅 Analiz Tarihi: ${new Date().toLocaleDateString('tr-TR')}`;
+
+            results.innerHTML = `<div class="result-content horoscope-result">${result}</div>`;
+        }
+
+        function calculateCompatibility() {
+            const person1Name = document.getElementById('person1Name').value.trim();
+            const person2Name = document.getElementById('person2Name').value.trim();
+            const person1Sign = document.getElementById('person1Sign').value;
+            const person2Sign = document.getElementById('person2Sign').value;
+
+            // Validasyon
+            if (!person1Name || !person2Name || !person1Sign || !person2Sign) {
+                showMessage('Lütfen tüm bilgileri doldurun!', true, 2);
+                return;
+            }
+
+            // Loading göster
+            showLoading(true, 2);
+
+            // Simulated delay for better UX
+            setTimeout(() => {
+                const compatibilityScore = compatibilityMatrix[person1Sign][person2Sign];
+                displayCompatibilityResult(person1Name, person2Name, person1Sign, person2Sign, compatibilityScore);
+                showMessage('Uyumluluk analizi tamamlandı!', false, 2);
+                showLoading(false, 2);
+            }, 2000);
+        }
+
+        function displayCompatibilityResult(name1, name2, sign1, sign2, score) {
+            const data1 = zodiacData[sign1];
+            const data2 = zodiacData[sign2];
+            
+            // Skor seviyesine göre değerlendirme
+            let level, emoji, scoreClass;
+            if (score >= 90) {
+                level = "MÜKEMMEL";
+                emoji = "💯";
+                scoreClass = "score-excellent";
+            } else if (score >= 80) {
+                level = "ÇOK İYİ";
+                emoji = "💖";
+                scoreClass = "score-excellent";
+            } else if (score >= 70) {
+                level = "İYİ";
+                emoji = "💕";
+                scoreClass = "score-good";
+            } else if (score >= 60) {
+                level = "ORTA";
+                emoji = "💛";
+                scoreClass = "score-good";
+            } else if (score >= 50) {
+                level = "ZAYIF";
+                emoji = "💔";
+                scoreClass = "score-average";
+            } else {
+                level = "DÜŞÜK";
+                emoji = "💙";
+                scoreClass = "score-poor";
+            }
+
+            // Detaylı yorumlar
+            const comments = {
+                "MÜKEMMEL": "İkiniz gerçek bir ruh eşisiniz! Birbirinizi mükemmel anlıyorsunuz ve uyumunuz harika.",
+                "ÇOK İYİ": "Harika bir uyumunuz var! Küçük çabalarla mükemmel bir ilişki yaşayabilirsiniz.",
+                "İYİ": "Güzel bir uyumunuz var. İletişim kurarak daha güçlü bir bağ kurabilirsiniz.",
+                "ORTA": "Ortalama bir uyumunuz var. Birbirinizi anlamaya çalışarak ilerleme kaydedebilirsiniz.",
+                "ZAYIF": "Uyumunuz biraz düşük. Sabır ve anlayışla güçlü bir ilişki kurabilirsiniz.",
+                "DÜŞÜK": "Farklılıklarınız çok, ama bu size yeni perspektifler kazandırabilir."
+            };
+
+            // Element uyumluluğu
+            const elementComments = {
+                "Ateş-Ateş": "İki ateş burcu! Tutkulu ama bazen çatışmalı.",
+                "Ateş-Toprak": "Ateş toprağı besler. Güçlü bir kombinasyon.",
+                "Ateş-Hava": "Hava ateşi körükler. Dinamik bir enerji.",
+                "Ateş-Su": "Zıt elementler. Dengeli yaklaşım gerekli.",
+                "Toprak-Toprak": "İki toprak burcu. Stabil ve güvenli.",
+                "Toprak-Hava": "Farklı yaklaşımlar. İletişim önemli.",
+                "Toprak-Su": "Su toprağı besler. Uyumlu bir kombinasyon.",
+                "Hava-Hava": "İki hava burcu. Entelektüel bağ güçlü.",
+                "Hava-Su": "Farklı enerji türleri. Denge kurmalısınız.",
+                "Su-Su": "İki su burcu. Duygusal bağ çok güçlü."
+            };
+
+            const elementKey = `${data1.element}-${data2.element}`;
+            const elementAnalysis = elementComments[elementKey] || elementComments[`${data2.element}-${data1.element}`] || "Benzersiz bir kombinasyon.";
+
+            // Öneriler
+            let suggestions;
+            if (score >= 80) {
+                suggestions = "• Doğal uyumunuzu koruyun\n• Birbirinize destek olmaya devam edin\n• Ortak hedefler belirleyin";
+            } else if (score >= 60) {
+                suggestions = "• İletişiminizi güçlendirin\n• Farklılıklarınızı kabul edin\n• Ortak aktiviteler yapın";
+            } else {
+                suggestions = "• Sabırlı olun ve birbirinizi anlamaya çalışın\n• Farklılıklarınızdan güç alın\n• Uzun vadeli düşünün";
+            }
+
+            const results = document.getElementById('results2');
+            
+            const resultHTML = `
+                <div class="result-content love-animation">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <h3 style="color: #feca57; font-size: 1.5rem;">
+                            ${data1.emoji} ${name1.toUpperCase()} ❤️ ${name2.toUpperCase()} ${data2.emoji}
+                        </h3>
+                        <p style="opacity: 0.8;">${sign1} + ${sign2}</p>
+                    </div>
+
+                    <div class="compatibility-score">
+                        <div class="score-circle ${scoreClass}">
+                            <div>
+                                <div style="font-size: 1.5rem;">${emoji}</div>
+                                <div>%${score}</div>
+                            </div>
+                        </div>
+                        <h4 style="color: #feca57; margin-bottom: 10px;">${level}</h4>
+                        <p>${comments[level]}</p>
+                    </div>
+
+                    <div style="text-align: left;">
+                        <h4 style="color: #feca57; margin: 20px 0 10px 0;">🔥 Element Analizi:</h4>
+                        <p>${data1.element} + ${data2.element} = ${elementAnalysis}</p>
+
+                        <h4 style="color: #feca57; margin: 20px 0 10px 0;">🪐 Gezegen Etkisi:</h4>
+                        <p>• ${sign1}: ${data1.planet} etkisi</p>
+                        <p>• ${sign2}: ${data2.planet} etkisi</p>
+
+                        <h4 style="color: #feca57; margin: 20px 0 10px 0;">💖 İlişki Önerileri:</h4>
+                        <p style="white-space: pre-line;">${suggestions}</p>
+
+                        <div style="text-align: center; margin-top: 30px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                            <p style="font-size: 0.9rem; opacity: 0.8;">
+                                🌟 Bu analiz genel astroloji bilgilerine dayanır.<br>
+                                💕 Gerçek aşk her türlü zorluğu aşabilir!<br><br>
+                                📅 ${new Date().toLocaleDateString('tr-TR')} - ${new Date().toLocaleTimeString('tr-TR')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            results.innerHTML = resultHTML;
+        }
+
+        function showDailyQuote() {
+            const quote = dailyQuotes[Math.floor(Math.random() * dailyQuotes.length)];
+            const quoteDisplay = document.getElementById('quoteDisplay');
+
+            const result = `📜 GÜNÜN SÖZÜ 📜
+${'='.repeat(40)}
+
+💭 "${quote}"
+
+✨ Bu söz size ilham versin!
+
+🌟 Her gün yeni bir başlangıçtır. 
+Bugünü en iyi şekilde değerlendirin!
+
+📅 ${new Date().toLocaleDateString('tr-TR')} - ${new Date().toLocaleTimeString('tr-TR')}`;
+
+            quoteDisplay.innerHTML = `<div class="result-content quote-animation" style="text-align: center; font-size: 1.2rem;">${result}</div>`;
+        }
+
+        function clearHoroscope() {
+            document.getElementById('name').value = '';
+            document.getElementById('day').value = '';
+            document.getElementById('month').value = '';
+            document.getElementById('year').value = '';
+            document.getElementById('errorMessage1').style.display = 'none';
+            document.getElementById('successMessage1').style.display = 'none';
+
+            const results = document.getElementById('results1');
+            results.innerHTML = `<div class="result-content">
+🧹 Tüm alanlar temizlendi!
+
+Yeni bir analiz için bilgilerinizi girebilirsiniz.
+
+🌟 İpucu: Doğum tarihinizi doğru girdiğinizden emin olun!
+            </div>`;
+
+            showMessage('Tüm alanlar temizlendi!', false, 1);
+        }
+
+        function clearCompatibility() {
+            document.getElementById('person1Name').value = '';
+            document.getElementById('person2Name').value = '';
+            document.getElementById('person1Sign').value = '';
+            document.getElementById('person2Sign').value = '';
+            document.getElementById('errorMessage2').style.display = 'none';
+            document.getElementById('successMessage2').style.display = 'none';
+
+            const results = document.getElementById('results2');
+            results.innerHTML = `<div class="result-content">
+🧹 Tüm alanlar temizlendi!
+
+Yeni bir uyumluluk analizi için bilgileri girebilirsiniz.
+
+💕 İpucu: Her iki kişi için de doğru burç seçtiğinizden emin olun!
+            </div>`;
+
+            showMessage('Tüm alanlar temizlendi!', false, 2);
+        }
+
+        // Enter tuşu ile form gönderme
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const activeTab = document.querySelector('.tab-content.active');
+                if (activeTab.id === 'horoscope') {
+                    calculateHoroscope();
+                } else if (activeTab.id === 'compatibility') {
+                    calculateCompatibility();
+                }
+            }
+        });
+
+        // Responsive optimizasyonlar
+        window.addEventListener('resize', function() {
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+            });
+        });
+    </script>
+</body>
+</html>
